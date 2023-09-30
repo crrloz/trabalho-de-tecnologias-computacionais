@@ -177,23 +177,19 @@
             <nav class="menu">
                 <div class="list-section">
                     <ul>
-                        <li><a href="academias.php" style="margin-right: 10px;">Academias</a></li>
-                        <li><a href="itens.php">Itens</a></li>
+                        <li><a href="academias.html" style="margin-right: 10px;">Academias</a></li>
+                        <li><a href="itens.html">Itens</a></li>
                     </ul>
                 </div>
                 <div class="logo">
                     <!-- Logo -->
-                    <a href="index.php">
+                    <a href="index.html">
                         LOGO
                     </a>
                 </div>
                 <div class="list-section">
                     <ul>
-                        <li><a href="logarusu.php">Logar</a></li>
-                        <?php 
-                        if(!isset($_SESSION["useruid"])){
-                            echo '<li><a class="btn-user" style="margin-left: 10px;" href="criarusu.php">Cadastrar</a></li>';
-                        } ?>
+                        <li><a href="logarusu.html">Logar</a></li>
                     </ul>
                 </div>
             </nav>
@@ -202,26 +198,25 @@
     
     <form>
         <div class="form">
-        <h2>Log In</h2><br>
+            <h2>Log In</h2><br>
 
-<input type="text" name="username" placeholder="E-mail/Usuário"> <br>
-<input type="password" name="pwd" placeholder="Senha">
+            <input type="text" name="username" placeholder="E-mail/Usuário"> <br>
+            <input type="password" name="pwd" placeholder="Senha">
 
-<div class="remember_me">
-    <div class="remember_me_checkbox">
-        <input type="checkbox" name="lembrar">
-        <label for="lembrar">Lembrar de mim</label>
-    </div>
-    
+            <div class="remember_me">
+                <div class="remember_me_checkbox">
+                    <input type="checkbox" name="lembrar">
+                    <label for="lembrar">Lembrar de mim</label>
+                </div>
+                
 
-    <a href="password-change.php">Esqueci minha senha</a>
-</div>
+                <a href="password-change.html">Esqueci minha senha</a>
+            </div>
 
-<input type="submit" value="Log In" name="submit">
+            <input type="submit" value="Log In" name="submit">
 
-<p class="link_paragraph">Não possui um cadastro? Clique <a href="criarusu.php">aqui!</a></p>
+            <p class="link_paragraph">Não possui um cadastro? Clique <a href="criarusu.html">aqui!</a></p>
         </div>
-        
     </form>
 
     <aside class="aside-picture">
